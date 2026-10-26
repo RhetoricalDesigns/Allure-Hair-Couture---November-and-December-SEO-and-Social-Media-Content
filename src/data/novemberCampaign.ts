@@ -371,29 +371,41 @@ WhatsApp us directly to order yours: +27 69 507 5835`,
 
 export const novemberBlog: BlogPost = {
   month: 'november',
-  title: 'The Art of Bridal Hair: A Guide to Your Perfect Day',
-  subtitle: 'Bridal trials, bespoke styling, and architectural hair sculpture for memorable weddings.',
+  title: 'The Art of Bridal Hair: An In-Depth Masterclass on Wedding Coiffure, Architectural Styling & Day-Of Artistry',
+  subtitle: 'Bridal trials, bespoke hair preparation timelines, veil anchor geometry, and architectural hair sculpture for memorable weddings in the Overberg.',
   author: 'Hanri',
   authorRole: 'Salon Owner & Master Stylist',
-  readTime: '8 min read',
+  readTime: '16 min read · Expanded Master Edition',
   date: 'November 2026',
-  quote: 'From the quiet ritual of getting ready to the final photograph, we create event hair that feels entirely your own.',
+  quote: 'From the quiet morning ritual of getting ready with crisp Overberg coffee to the final dance under coastal stars, we create event hair that feels entirely, authentically your own.',
   sections: [
     {
-      heading: 'The Architecture of Bridal Hair',
-      content: 'Your wedding day is a masterpiece in the making. Every detail has been considered — the venue, the dress, the flowers, the lighting. But there is one element that frames them all: your hair. At Allure Hair Couture, we believe bridal hair is not simply styling. It is architecture. It is sculpture. It is the quiet confidence that carries you from the first look in the mirror to the final dance under the stars.'
+      heading: 'The Architecture & Philosophy of Bridal Hair',
+      content: 'Your wedding day is a masterpiece in the making. Every detail has been considered with painstaking devotion — the venue’s architectural lines, the silk drape of your gown, the floral arrangements, the ambient lighting. But there is one element that frames them all: your hair. At Allure Hair Couture, we believe bridal hair is not simply styling or applying spray. It is organic architecture. It is sculpture. It is the quiet confidence that carries a woman from her first look in the morning mirror to the final midnight photograph under the Western Cape stars. Every curve, wave, and chignon must harmonise with the bride’s skeletal structure, neck length, collarbone, and dress neckline.'
+    },
+    {
+      heading: 'The Pre-Wedding Timeline: 6 Months to 1 Week Out',
+      content: 'Mastering bridal hair requires months of disciplined preparation. Six months prior to your wedding, we initiate a dedicated scalp and hair health diagnostic. We assess moisture-to-protein balance, cuticle porosity, and scalp micro-circulation. Four months out, we establish a customised Wella Color Touch or Illumina glossing schedule so that your chosen shade achieves peak dimension without damaging fragile ends. Two months out, we conduct your comprehensive 2.5-hour bridal trial in our Hemel & Aarde Village salon. During this trial, we test two distinct structural variations—perhaps an airy, textured low-bun and a romantic half-up sculpted wave—photographing both under natural sunlight and warm indoor studio lighting.'
     },
     {
       heading: 'The Bridal Consultation: Beginning with Listening',
-      content: 'Every bridal journey begins with listening. During your trial, we discuss your dress silhouette, your veil or headpiece, the venue’s lighting, and the atmosphere you wish to create. We consider your hair’s texture, length, and natural movement — because the most beautiful looks are those that feel inevitable.'
+      content: 'Every bridal journey begins with deep listening. During your trial, we discuss far more than hair photos from Pinterest. We analyze the fabric weight of your dress—whether heavy mikado silk, delicate French lace, or flowing crepe—and how wind behaves at your chosen venue, be it a Hermanus coastal cliff, a wine estate terrace, or an indoor ballroom. We examine your veil weight and headpiece attachment mechanisms. We consider your hair’s natural density, grain, and curl pattern, because the most breathtaking bridal looks are those that work in harmony with nature rather than fighting against it.'
     },
     {
-      heading: 'Our Artisanal Approach',
-      content: 'We specialise in considered artistry: soft romantic updos, sleek architectural chignons, flowing bohemian waves, and polished vintage-inspired sets. Each style is composed with precision, never overworked. We use premium Wella and Joico formulations to ensure your hair looks as vital at midnight as it did at noon.'
+      heading: 'Veil Anchor Geometry & Headpiece Integration',
+      content: 'A frequent point of failure in amateur wedding hair is veil security. Heavy cathedral veils exerts downward leverage during outdoor wind gusts. At Allure, we design invisible internal anchor grids using criss-crossed, textured bobby pins woven through a subterranean foundation braid. This ensures your veil slides effortlessly into place and stays rock-solid during your walk down the aisle, yet releases smoothly when removed before the evening reception without disturbing a single strand of your updo.'
     },
     {
-      heading: 'What Our Bridal Experience Includes',
-      content: 'Our bridal package includes a comprehensive pre-wedding trial session, dedicated day-of styling for the bride, and seamless coordination for your bridal entourage and mothers of the couple. We also offer bespoke on-location services across the Hermanus and Hemel & Aarde wine valley.'
+      heading: 'Formulation & Weather Resistance in Coastal Climates',
+      content: 'Hermanus is famous for its crisp ocean air and coastal breezes. Humidity can quickly cause frizz or cause soft waves to fall flat if incorrect products are used. We utilize anti-humidity barrier shields, micro-fine aerosol polymers from Joico and Wella, and thermal protection elixirs that seal the cuticle against sea salt moisture while retaining touchable, natural movement. We never create "helmet hair"; our styles are engineered to feel touchably soft while maintaining their sculptured silhouette all night.'
+    },
+    {
+      heading: 'Day-Of Artistry & Entourage Coordination',
+      content: 'On the morning of your wedding, atmosphere is paramount. We create a serene, organized sanctuary for you and your bridal party. From mothers of the bride to bridesmaids and flower girls, we pace our work precisely so that every member of your party receives focused, unhurried attention. We finish the bride last so her hair remains fresh, luminous, and untouched right up until she steps into her gown.'
+    },
+    {
+      heading: 'Post-Wedding Hair Recovery & Honeymoon Preparation',
+      content: 'After days of back-combing, hot tools, and hairpins, your hair deserves a restorative detox. We provide every bride with a honeymoon hair rescue kit featuring Joico Defy Damage Protective Shield and K18 Molecular Repair Masks. This guarantees your hair transitions seamlessly into your honeymoon, looking healthy, soft, and radiantly glossy.'
     }
   ],
   images: ['/media/bridal2.jpg', '/media/bridal3.jpg', '/media/bridal4.jpg']

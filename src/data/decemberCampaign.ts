@@ -378,28 +378,36 @@ Wishing our entire Allure family a glowing, restorative holiday season.`,
 export const decemberBlog: BlogPost = {
   month: 'december',
   title: 'Summer Radiance: The High-End Guide to Protecting & Perfecting Hair Through the Coastal Festive Season',
-  subtitle: 'Mastering UV defence, saltwater moisture replenishment, and gala styling on the South African coast.',
+  subtitle: 'Mastering UV defence, Atlantic ocean moisture replenishment, balayage preservation, and gala styling on the South African coast.',
   author: 'Hanri',
   authorRole: 'Salon Owner & Master Stylist',
-  readTime: '10 min read',
+  readTime: '18 min read · Expanded Master Edition',
   date: 'December 2026',
-  quote: 'True coastal luxury is hair that looks effortless under the midday sun and radiant under evening chandeliers.',
+  quote: 'True coastal luxury is hair that looks effortless under the midday Hermanus sun and radiantly opulent under evening gala chandeliers.',
   sections: [
     {
-      heading: 'The Summer Element: Sun, Surf & Hair Health',
-      content: 'December in Hermanus is glorious — bright coastal sunlight, cooling Atlantic breezes, and days spent moving between tidal pools, vineyard terraces, and candlelit dinners. However, this idyllic environment presents a unique trifecta of challenges for hair: UV radiation degrades melanin and colour pigments, oceanic salt crystals draw out critical cellular moisture, and wind causes micro-friction in cuticle scales. Maintaining salon-grade vibrancy requires intentional, preventative rituals.'
+      heading: 'The Science of Coastal Exposure: Sun, Atlantic Salt & Keratin Breakdown',
+      content: 'December in Hermanus is glorious — bright coastal sunlight, cooling Atlantic ocean breezes, and festive days spent moving between tidal pools, vineyard wine estate terraces, and candlelit evening galas. However, this idyllic environment presents a unique trifeca of structural challenges for hair. UV-A and UV-B radiation break down disulfide bonds within the cortex and degrade natural and artificial color pigments, causing premature brassiness. Simultaneously, oceanic salt crystals draw out critical intracellular moisture from the hair shaft, leaving cuticle scales lifted, rough, and prone to micro-friction damage. Maintaining salon-grade vibrancy throughout December requires an intentional, scientific approach to hair defense.'
     },
     {
-      heading: 'The Pre-Swim Hydration Shield',
-      content: 'Before stepping into the ocean or chlorinated pools, drench your hair in fresh tap water and smooth a generous dollop of leave-in conditioning butter through mid-lengths and ends. Hair operates like a sponge: once saturated with clean moisture, it cannot absorb the harsh saline or mineral-rich saltwater that causes brittleness and brassiness.'
+      heading: 'The Pre-Swim Hydration Shield: The Sponge Principle',
+      content: 'Before stepping into the Atlantic ocean or swimming pools, drench your hair thoroughly with fresh tap water and smooth a generous dollop of leave-in conditioning butter or protective oil through the mid-lengths and ends. Dry hair behaves like a porous dry sponge: if submerged dry into saltwater or chlorinated water, it rapidly absorbs minerals, copper ions, and salt crystals deep into the cortex. However, when pre-saturated with clean fresh water and sealed with a hydrophobic lipid layer, the hair cuticle is unable to absorb damaging environmental impurities.'
     },
     {
-      heading: 'Preserving Your Balayage & Glaze',
-      content: 'Sun-kissed blondes and warm brunettes require active antioxidant protection. In December, we transition our clients to restorative lipid-replenishing shampoos and weekly violet or bronze toning glazes. Avoid heavy clarifying shampoos after beach days; instead, opt for clarifying treatments formulated specifically with chelating agents that gently lift minerals without stripping your colour investment.'
+      heading: 'Preserving Your Balayage, Colour Melts & Glaze Tones',
+      content: 'Sun-kissed blondes, cool beige ribbons, and rich honey brunettes require active antioxidant preservation during summer months. In December, we transition our clients from heavy clarifying shampoos to sulfate-free, lipid-replenishing cleansing creams paired with weekly violet or cool-beige conditioning glazes. For clients spending extended days outdoors, we prescribe UV-filter hair mists that reflect solar radiation before it can oxidize your custom Wella Color Touch toner.'
     },
     {
-      heading: 'From Beachfront to Black-Tie: Effortless Transformation',
-      content: 'When transitioning from daytime coastal leisure to evening festive galas, focus on texture rather than stiffness. A dry texturising spray applied at the roots creates modern, airy lift. Pinning one side with an architectural hairpin or drawing lengths into a low, polished chignon provides instant, understated opulence that feels authentic to our Hermanus lifestyle.'
+      heading: 'In-Salon Molecular Hair Restoration: Olaplex & K18 Protocols',
+      content: 'When saltwater and UV exposure compromise hair elasticity, surface conditioners alone are insufficient. At Allure, we utilize two-stage molecular repair therapies: Olaplex No.1 and No.2 bond-builders reconstruct broken disulfide bonds at the core of the hair cortex, while K18 peptide treatments reconnect broken polypeptide chains to restore structural tensile strength. Combined with our deep steam infusion rituals in Hemel & Aarde Village, your hair emerges soft, elastic, and impossibly shiny.'
+    },
+    {
+      heading: 'Effortless Evening Transformations: From Coastal Leisure to Black-Tie Soirée',
+      content: 'When transitioning from daytime coastal leisure to evening festive celebrations, avoid over-styling or coating hair in heavy, stiff hairsprays. Instead, work with your natural coastal texture. A light dusting of dry texturising volume powder at the roots delivers modern, airy lift. Gathering lengths into a sculpted low chignon, soft Hollywood brushed-out waves, or pinning one side with an architectural hairpin provides instant, understated opulence that feels authentic to our Hermanus lifestyle.'
+    },
+    {
+      heading: 'Holiday Gifting & Home Haircare Rituals',
+      content: 'Self-care does not pause during the holidays. Our curated Joico Defy Damage and Wella Elements holiday discovery sets make ideal gifts for loved ones—or a deserving treat for yourself. Each set includes concentrated treatments formulated to maintain moisture balance between salon visits, ensuring your hair remains radiant through New Year’s Eve and into the new year.'
     }
   ],
   images: ['/media/colouring.jpg', '/media/bridal5.jpg', '/media/bridal6.jpg']
