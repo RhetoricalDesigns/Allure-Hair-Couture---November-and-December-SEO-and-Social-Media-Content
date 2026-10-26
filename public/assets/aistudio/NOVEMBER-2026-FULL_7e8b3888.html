@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allure Hair Couture — November Glamour Campaign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Zilla+Slab:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      background: #faf8f3;
+      color: #11100f;
+      line-height: 1.7;
+    }
+    
+    .page-header {
+      background: #11100f;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #b8943f;
+    }
+    
+    .page-header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    
+    .page-header p {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #d7bb72;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    
+    .section {
+      margin-bottom: 4rem;
+    }
+    
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #11100f;
+    }
+    
+    .section-subtitle {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b8943f;
+      margin-bottom: 2rem;
+    }
+    
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #b8943f;
+      margin: 1.5rem 0;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .grid-landscape-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .grid-landscape-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .post-card {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .post-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border-color: #b8943f;
+    }
+    
+    .post-image {
+      width: 100%;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .post-card.is-fb-cover .post-image {
+      aspect-ratio: 2.4/1;
+    }
+    
+    .post-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .post-card:hover .post-image img {
+      transform: scale(1.04);
+    }
+    
+    .post-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17,16,15,0.15) 0%, rgba(17,16,15,0.75) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.75rem;
+      z-index: 1;
+    }
+    
+    .post-image-label {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d7bb72;
+      margin-bottom: 0.5rem;
+    }
+    
+    .post-image-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    
+    .post-image-copy {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 1.25rem;
+      max-width: 90%;
+    }
+    
+    .post-image-cta {
+      display: inline-block;
+      background: #b8943f;
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2px;
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      align-self: flex-start;
+      transition: all 0.3s ease;
+    }
+    
+    .post-image-cta:hover {
+      background: #d7bb72;
+      color: #11100f;
+    }
+    
+    .post-content {
+      padding: 1.5rem;
+    }
+    
+    .post-meta {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #b8943f;
+      margin-bottom: 0.5rem;
+    }
+    
+    .post-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #11100f;
+      margin-bottom: 0.75rem;
+    }
+    
+    .post-copy {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #514d48;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    
+    .post-cta {
+      display: inline-block;
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.5rem;
+      background: #b8943f;
+      color: #11100f;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .post-cta:hover {
+      background: #8f6c24;
+      color: #fff;
+    }
+    
+    .blog-section {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      padding: 3rem;
+      margin-top: 3rem;
+    }
+    
+    .blog-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .blog-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-meta {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #b8943f;
+    }
+    
+    .blog-body {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #282624;
+    }
+    
+    .blog-body p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .blog-body h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #11100f;
+    }
+    
+    .blog-body blockquote {
+      border-left: 2px solid #b8943f;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #514d48;
+      font-size: 1.3rem;
+    }
+    
+    .blog-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    
+    .blog-image {
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 2px;
+      border: 1px solid #e1dcd4;
+    }
+    
+    .blog-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .blog-image:hover img {
+      transform: scale(1.03);
+    }
+    
+    .campaign-plan {
+      background: #11100f;
+      color: #fff;
+      padding: 3rem;
+      border-radius: 2px;
+      margin-top: 3rem;
+    }
+    
+    .campaign-plan h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    
+    .campaign-plan h3 {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #d7bb72;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .campaign-plan p, .campaign-plan li {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.7);
+    }
+    
+    .campaign-plan ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .campaign-plan li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #282624;
+    }
+    
+    .campaign-plan li:last-child {
+      border-bottom: none;
+    }
+    
+    /* ── Facebook Text Posts ── */
+    .fb-text-post {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .fb-text-post:hover {
+      border-color: #b8943f;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    
+    .fb-text-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e1dcd4;
+    }
+    
+    .fb-text-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #b8943f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+    
+    .fb-text-meta h4 {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #11100f;
+      margin-bottom: 0.2rem;
+    }
+    
+    .fb-text-meta span {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 0.9rem;
+      color: #6b6660;
+    }
+    
+    .fb-text-body {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #282624;
+      margin-bottom: 1.5rem;
+    }
+    
+    .fb-text-body p {
+      margin-bottom: 1rem;
+    }
+    
+    .fb-text-actions {
+      display: flex;
+      gap: 1.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #e1dcd4;
+    }
+    
+    .fb-text-actions span {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #6b6660;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    
+    .fb-text-actions span:hover {
+      color: #b8943f;
+    }
+    
+    /* ── Square Posts ── */
+    .square-card {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .square-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border-color: #b8943f;
+    }
+    
+    .square-image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .square-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .square-card:hover .square-image img {
+      transform: scale(1.04);
+    }
+    
+    .square-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17,16,15,0.2) 0%, rgba(17,16,15,0.65) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      z-index: 1;
+    }
+    
+    .square-image-label {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d7bb72;
+      margin-bottom: 0.5rem;
+    }
+    
+    .square-image-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+    /* ── Portrait Reels ── */
+    .reel-card {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .reel-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border-color: #b8943f;
+    }
+    
+    .reel-image {
+      width: 100%;
+      aspect-ratio: 9/16;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .reel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .reel-card:hover .reel-image img {
+      transform: scale(1.04);
+    }
+    
+    .reel-badge {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(17,16,15,0.85);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      z-index: 2;
+    }
+    
+    .reel-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17,16,15,0.1) 0%, rgba(17,16,15,0.7) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      z-index: 1;
+    }
+    
+    .reel-image-label {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.55rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d7bb72;
+      margin-bottom: 0.4rem;
+    }
+    
+    .reel-image-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+    /* ── Facebook Landscape ── */
+    .fb-landscape-card {
+      background: #fff;
+      border: 1px solid #e1dcd4;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .fb-landscape-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border-color: #b8943f;
+    }
+    
+    .fb-landscape-image {
+      width: 100%;
+      aspect-ratio: 1200/630;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .fb-landscape-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    
+    .fb-landscape-card:hover .fb-landscape-image img {
+      transform: scale(1.04);
+    }
+    
+    .fb-landscape-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(17,16,15,0.15) 0%, rgba(17,16,15,0.6) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      z-index: 1;
+    }
+    
+    .fb-landscape-label {
+      font-family: 'Zilla Slab', Georgia, serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d7bb72;
+      margin-bottom: 0.5rem;
+    }
+    
+    .fb-landscape-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+    .fb-landscape-copy {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 1rem;
+      max-width: 90%;
+    }
+    
+    /* ── Animations ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    
+    @keyframes gentleZoom {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    @keyframes slideInLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes pulseGold {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(184,148,63,0.3); }
+      50% { box-shadow: 0 0 0 8px rgba(184,148,63,0); }
+    }
+    
+    @keyframes kenBurns {
+      0% { transform: scale(1) translate(0,0); }
+      50% { transform: scale(1.08) translate(-2%,-1%); }
+      100% { transform: scale(1) translate(0,0); }
+    }
+    
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    
+    .animate-fade-in {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    .animate-shimmer {
+      animation: shimmer 3s ease-in-out infinite;
+    }
+    
+    .animate-ken-burns img {
+      animation: kenBurns 8s ease-in-out infinite;
+    }
+    
+    .animate-float {
+      animation: floatBadge 3s ease-in-out infinite;
+    }
+    
+    .animate-pulse-cta {
+      animation: pulseGold 2s ease-in-out infinite;
+    }
+    
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; }
+      .blog-images { grid-template-columns: 1fr; }
+      .campaign-plan { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="page-header">
+    <h1>November Glamour</h1>
+    <p>Allure Hair Couture — Monthly Content Showcase</p>
+  </div>
+  
+  <div class="container">
+    
+    <!-- Social Media Posts Section -->
+    <div class="section">
+      <h2 class="section-title">Social Media Posts</h2>
+      <div class="section-subtitle">One of every post — November 2026</div>
+      <div class="divider"></div>
+      
+      <div class="grid">
+        
+        <!-- Bridal Post -->
+        <div class="post-card">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal1.jpeg" alt="Elegant bridal hair styled by Allure Hair Couture">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Bridal & Events</div>
+              <div class="post-image-headline">Made for the Moment</div>
+              <p class="post-image-copy">Complete hair design for your most important moments. Trials, styling and day-of artistry.</p>
+              <a href="#" class="post-image-cta">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Summer Colour Post -->
+        <div class="post-card">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Hair%20Colouring.jpg" alt="Hair Colouring service by Allure Hair Couture">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Colour Artistry</div>
+              <div class="post-image-headline">Summer Luminescence</div>
+              <p class="post-image-copy">Balayage, colour melts and bespoke formulations. Every shade mixed and applied like a master painting.</p>
+              <a href="#" class="post-image-cta">Explore Service</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Spotlight Post -->
+        <div class="post-card">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Live/Staff%20Photo.jpeg" alt="The Allure Hair Couture team in the salon">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Team Spotlight</div>
+              <div class="post-image-headline">Meet the People of Allure</div>
+              <p class="post-image-copy">Thoughtful hairdressing, delivered with warmth and a personal touch. Every strand tells a story.</p>
+              <a href="#" class="post-image-cta">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gift Voucher Post -->
+        <div class="post-card">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Promos/Product1.jpeg" alt="Joico Youth Lock product">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Gift Voucher</div>
+              <div class="post-image-headline">The Gift of Luxury</div>
+              <p class="post-image-copy">Give the gift of confidence and beauty. Available in any denomination — from R500 to R10 000. Never expires.</p>
+              <a href="#" class="post-image-cta">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Instagram Story -->
+        <div class="post-card">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Luxury%20Extensions.jpg" alt="Luxury Extensions service by Allure Hair Couture">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Service Spotlight</div>
+              <div class="post-image-headline">Luxury Extensions</div>
+              <p class="post-image-copy">Tapes, wefts, keratin bonds & clip-ins. Certified specialist. Length, volume, confidence — seamlessly blended.</p>
+              <a href="#" class="post-image-cta">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Facebook Cover -->
+        <div class="post-card is-fb-cover">
+          <div class="post-image">
+            <img src="https://allure-hair-couture.co.za/Media/Feature%20Images/Allure_Hero_Image.jfif" alt="Luxury hair colour by Allure Hair Couture">
+            <div class="post-image-overlay">
+              <div class="post-image-label">Campaign Cover</div>
+              <div class="post-image-headline">November Glamour</div>
+              <p class="post-image-copy">Bridal · Colour · Extensions. Your ultimate luxury hair experience in Hermanus.</p>
+              <a href="#" class="post-image-cta">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Facebook Text Posts Section -->
+    <div class="section">
+      <h2 class="section-title">Facebook Text Posts</h2>
+      <div class="section-subtitle">Copy for native Facebook posts — November 2026</div>
+      <div class="divider"></div>
+      
+      <div class="fb-text-post">
+        <div class="fb-text-header">
+          <div class="fb-text-avatar">A</div>
+          <div class="fb-text-meta">
+            <h4>Allure Hair Couture</h4>
+            <span>2 November 2026 · Public</span>
+          </div>
+        </div>
+        <div class="fb-text-body">
+          <p>November is wedding season. From the quiet ritual of getting ready to the final photograph, we create event hair that feels entirely your own.</p>
+          <p>Bridal trials, bespoke styling and polished looks for every member of your party — composed with precision, never overworked.</p>
+          <p>Enquire about your event: +27 69 507 5835</p>
+        </div>
+        <div class="fb-text-actions">
+          <span>Like</span>
+          <span>Comment</span>
+          <span>Share</span>
+        </div>
+      </div>
+      
+      <div class="fb-text-post">
+        <div class="fb-text-header">
+          <div class="fb-text-avatar">A</div>
+          <div class="fb-text-meta">
+            <h4>Allure Hair Couture</h4>
+            <span>9 November 2026 · Public</span>
+          </div>
+        </div>
+        <div class="fb-text-body">
+          <p>Summer luminescence. Balayage, colour melts and bespoke formulations.</p>
+          <p>Every shade mixed and applied like a master painting. Your unique beauty, elevated.</p>
+          <p>Book your Colour Artistry consultation: 028 316 3845</p>
+        </div>
+        <div class="fb-text-actions">
+          <span>Like</span>
+          <span>Comment</span>
+          <span>Share</span>
+        </div>
+      </div>
+      
+      <div class="fb-text-post">
+        <div class="fb-text-header">
+          <div class="fb-text-avatar">A</div>
+          <div class="fb-text-meta">
+            <h4>Allure Hair Couture</h4>
+            <span>16 November 2026 · Public</span>
+          </div>
+        </div>
+        <div class="fb-text-body">
+          <p>Thoughtful hairdressing, delivered with warmth and a personal touch.</p>
+          <p>Meet Hanri, Lorenzo, Lane, Helena, Locadia, Thando, Cimone, Angelique and Andiswa — the people of Allure.</p>
+          <p>Every service begins with listening. Every strand tells a story.</p>
+        </div>
+        <div class="fb-text-actions">
+          <span>Like</span>
+          <span>Comment</span>
+          <span>Share</span>
+        </div>
+      </div>
+      
+      <div class="fb-text-post">
+        <div class="fb-text-header">
+          <div class="fb-text-avatar">A</div>
+          <div class="fb-text-meta">
+            <h4>Allure Hair Couture</h4>
+            <span>23 November 2026 · Public</span>
+          </div>
+        </div>
+        <div class="fb-text-body">
+          <p>The Gift of Luxury.</p>
+          <p>Available in any denomination — from R500 to R10 000. Valid for all services & Joico products. Beautifully presented with luxury gift packaging. No expiry date — redeem anytime.</p>
+          <p>Give the gift of confidence and beauty. WhatsApp us to purchase: +27 69 507 5835</p>
+        </div>
+        <div class="fb-text-actions">
+          <span>Like</span>
+          <span>Comment</span>
+          <span>Share</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Square Posts Section -->
+    <div class="section">
+      <h2 class="section-title">Square Posts</h2>
+      <div class="section-subtitle">Instagram feed · 1080 × 1080 — November 2026</div>
+      <div class="divider"></div>
+      
+      <div class="grid">
+        
+        <div class="square-card">
+          <div class="square-image">
+            <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal2.jpeg" alt="Detailed bridal updo">
+            <div class="square-image-overlay">
+              <div class="square-image-label">Bridal & Events</div>
+              <div class="square-image-headline">Made for the Moment</div>
+              <p class="post-image-copy">Complete hair design for your most important moments. Trials, styling and day-of artistry.</p>
+              <a href="#" class="post-image-cta">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="square-card">
+          <div class="square-image">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Hair%20Colouring.jpg" alt="Hair Colouring">
+            <div class="square-image-overlay">
+              <div class="square-image-label">Colour Artistry</div>
+              <div class="square-image-headline">Summer Luminescence</div>
+              <p class="post-image-copy">Balayage, colour melts and bespoke formulations. Every shade mixed and applied like a master painting.</p>
+              <a href="#" class="post-image-cta">Explore Service</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="square-card">
+          <div class="square-image">
+            <img src="https://allure-hair-couture.co.za/Media/Live/Staff%20Photo.jpeg" alt="Allure Team">
+            <div class="square-image-overlay">
+              <div class="square-image-label">Team Spotlight</div>
+              <div class="square-image-headline">Meet the People of Allure</div>
+              <p class="post-image-copy">Thoughtful hairdressing, delivered with warmth and a personal touch. Every strand tells a story.</p>
+              <a href="#" class="post-image-cta">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="square-card">
+          <div class="square-image">
+            <img src="https://allure-hair-couture.co.za/Media/Promos/Product1.jpeg" alt="Professional Products">
+            <div class="square-image-overlay">
+              <div class="square-image-label">Gift Voucher</div>
+              <div class="square-image-headline">The Gift of Luxury</div>
+              <p class="post-image-copy">Give the gift of confidence and beauty. Available in any denomination — from R500 to R10 000. Never expires.</p>
+              <a href="#" class="post-image-cta">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Portrait Reels Section -->
+    <div class="section">
+      <h2 class="section-title">Portrait Reels</h2>
+      <div class="section-subtitle">Instagram Reels · 1080 × 1920 — Animated — November 2026</div>
+      <div class="divider"></div>
+      
+      <div class="grid">
+        
+        <div class="reel-card animate-ken-burns">
+          <div class="reel-image">
+            <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal3.jpeg" alt="Romantic event hairstyle">
+            <div class="reel-badge animate-float">Bridal & Events</div>
+            <div class="reel-image-overlay">
+              <div class="reel-image-label">Bridal & Events</div>
+              <div class="reel-image-headline">Made for the Moment</div>
+              <p class="post-image-copy">Complete hair design for your most important moments. Trials, styling and day-of artistry.</p>
+              <a href="#" class="post-image-cta">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reel-card animate-ken-burns">
+          <div class="reel-image">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Hair%20Colouring.jpg" alt="Hair Colouring">
+            <div class="reel-badge animate-float">Colour Artistry</div>
+            <div class="reel-image-overlay">
+              <div class="reel-image-label">Colour Artistry</div>
+              <div class="reel-image-headline">Summer Luminescence</div>
+              <p class="post-image-copy">Balayage, colour melts and bespoke formulations. Every shade mixed and applied like a master painting.</p>
+              <a href="#" class="post-image-cta">Explore Service</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reel-card animate-ken-burns">
+          <div class="reel-image">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Luxury%20Extensions.jpg" alt="Luxury Extensions">
+            <div class="reel-badge animate-float">Luxury Extensions</div>
+            <div class="reel-image-overlay">
+              <div class="reel-image-label">Luxury Extensions</div>
+              <div class="reel-image-headline">Luxury Extensions</div>
+              <p class="post-image-copy">Tapes, wefts, keratin bonds & clip-ins. Certified specialist. Length, volume, confidence — seamlessly blended.</p>
+              <a href="#" class="post-image-cta">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reel-card animate-ken-burns">
+          <div class="reel-image">
+            <img src="https://allure-hair-couture.co.za/Media/Feature%20Images/Allure_Hero_Image.jfif" alt="Luxury hair colour">
+            <div class="reel-badge animate-float">Allure Hair Couture</div>
+            <div class="reel-image-overlay">
+              <div class="reel-image-label">November Glamour</div>
+              <div class="reel-image-headline">Allure Hair Couture</div>
+              <p class="post-image-copy">Bridal · Colour · Extensions. Your ultimate luxury hair experience in Hermanus.</p>
+              <a href="#" class="post-image-cta">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Facebook Landscape Posts Section -->
+    <div class="section">
+      <h2 class="section-title">Facebook Landscape Posts</h2>
+      <div class="section-subtitle">Facebook · 1200 × 630 — Animated — November 2026</div>
+      <div class="divider"></div>
+      
+      <div class="grid grid-landscape-2">
+        
+        <div class="fb-landscape-card">
+          <div class="fb-landscape-image animate-ken-burns">
+            <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal4.jpeg" alt="Refined bridal styling">
+            <div class="fb-landscape-overlay">
+              <div class="fb-landscape-label">Bridal & Events</div>
+              <div class="fb-landscape-headline">Made for the Moment</div>
+              <p class="fb-landscape-copy">Complete hair design for your most important moments. Trials, styling and day-of artistry.</p>
+              <a href="#" class="post-image-cta">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="fb-landscape-card">
+          <div class="fb-landscape-image animate-ken-burns">
+            <img src="https://allure-hair-couture.co.za/Media/Services/Hair%20Colouring.jpg" alt="Hair Colouring">
+            <div class="fb-landscape-overlay">
+              <div class="fb-landscape-label">Colour Artistry</div>
+              <div class="fb-landscape-headline">Summer Luminescence</div>
+              <p class="fb-landscape-copy">Balayage, colour melts and bespoke formulations. Every shade mixed and applied like a master painting.</p>
+              <a href="#" class="post-image-cta">Explore Service</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="fb-landscape-card">
+          <div class="fb-landscape-image animate-ken-burns">
+            <img src="https://allure-hair-couture.co.za/Media/Live/Staff%20Photo.jpeg" alt="Allure Team">
+            <div class="fb-landscape-overlay">
+              <div class="fb-landscape-label">Team Spotlight</div>
+              <div class="fb-landscape-headline">Meet the People of Allure</div>
+              <p class="fb-landscape-copy">Thoughtful hairdressing, delivered with warmth and a personal touch. Every strand tells a story.</p>
+              <a href="#" class="post-image-cta">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="fb-landscape-card">
+          <div class="fb-landscape-image animate-ken-burns">
+            <img src="https://allure-hair-couture.co.za/Media/Promos/Product1.jpeg" alt="Professional Products">
+            <div class="fb-landscape-overlay">
+              <div class="fb-landscape-label">Gift Voucher</div>
+              <div class="fb-landscape-headline">The Gift of Luxury</div>
+              <p class="fb-landscape-copy">Give the gift of confidence and beauty. Available in any denomination — from R500 to R10 000. Never expires.</p>
+              <a href="#" class="post-image-cta">Purchase Now</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Blog Post Section -->
+    <div class="blog-section">
+      <div class="blog-header">
+        <div class="blog-meta">Allure Hair Couture Blog · November 2026</div>
+        <h2>The Art of Bridal Hair: A Guide to Your Perfect Day</h2>
+        <div class="blog-meta">By Hanri · Salon Owner & Master Stylist · 8 min read</div>
+      </div>
+      
+      <div class="divider" style="margin: 1.5rem auto;"></div>
+      
+      <div class="blog-body">
+        <p>Your wedding day is a masterpiece in the making. Every detail has been considered — the venue, the dress, the flowers, the lighting. But there is one element that frames them all: your hair.</p>
+        
+        <p>At Allure Hair Couture, we believe bridal hair is not simply styling. It is architecture. It is sculpture. It is the quiet confidence that carries you from the first look in the mirror to the final dance under the stars.</p>
+        
+        <blockquote>"From the quiet ritual of getting ready to the final photograph, we create event hair that feels entirely your own."</blockquote>
+        
+        <h3>The Consultation</h3>
+        <p>Every bridal journey begins with listening. During your trial, we discuss your dress silhouette, your veil or headpiece, the venue's lighting, and the atmosphere you wish to create. We consider your hair's texture, length, and natural movement — because the most beautiful looks are those that feel inevitable.</p>
+        
+        <h3>Our Approach</h3>
+        <p>We specialise in considered artistry: soft romantic updos, sleek architectural chignons, flowing bohemian waves, and polished vintage-inspired sets. Each style is composed with precision, never overworked. We use premium Wella and Joico products to ensure your hair looks as vital at midnight as it did at noon.</p>
+        
+        <h3>What We Offer</h3>
+        <p>Our bridal package includes a complete trial, day-of styling for the bride, and flexible options for the wedding party. We also offer bespoke occasion styling for guests who wish to feel polished and confident alongside you.</p>
+        
+        <p>Because every strand tells a story. Let us help yours unfold beautifully.</p>
+      </div>
+      
+      <div class="blog-images">
+        <div class="blog-image">
+          <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal2.jpeg" alt="Detailed bridal updo by Allure Hair Couture">
+        </div>
+        <div class="blog-image">
+          <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal3.jpeg" alt="Romantic event hairstyle by Allure Hair Couture">
+        </div>
+        <div class="blog-image">
+          <img src="https://allure-hair-couture.co.za/Media/Bridal/Bridal4.jpeg" alt="Refined bridal styling by Allure Hair Couture">
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#" class="post-cta" style="display: inline-block; padding: 1rem 2.5rem; font-size: 0.8rem;">Enquire About Your Event</a>
+      </div>
+    </div>
+    
+    <!-- Campaign Plan Section -->
+    <div class="campaign-plan">
+      <h2>November 2026 — Campaign Plan</h2>
+      <div class="divider" style="background: #d7bb72; margin: 1.5rem 0;"></div>
+      
+      <h3>Theme</h3>
+      <p>November Glamour — Peak wedding season meets holiday preparation. A month of refinement, colour, and celebration.</p>
+      
+      <h3>Pillars</h3>
+      <ul>
+        <li><strong>Bridal & Events</strong> — Wedding season peak. Trials, bespoke styling, day-of artistry.</li>
+        <li><strong>Colour Artistry</strong> — Summer-ready balayage, colour melts, bespoke formulations.</li>
+        <li><strong>Team Spotlight</strong> — Humanise the brand. Meet the artists behind the craft.</li>
+        <li><strong>Gift Voucher</strong> — Holiday gifting. Position as the ultimate luxury present.</li>
+        <li><strong>Treatments</strong> — Pre-holiday restoration. Deep conditioning, keratin smoothing, scalp therapies.</li>
+      </ul>
+      
+      <h3>Content Calendar</h3>
+      <p><strong>Week 1 (2–7 Nov):</strong> Bridal launch — 2 Instagram posts, 1 Facebook cover, 2 Stories (service spotlight + BTS).</p>
+      <p><strong>Week 2 (9–15 Nov):</strong> Colour Artistry — 3 Instagram posts, 1 Facebook post, 2 Stories (colour close-up + product tie-in).</p>
+      <p><strong>Week 3 (16–20 Nov):</strong> Team Spotlight — 2 Instagram posts, 1 Facebook post, 1 Story (team carousel).</p>
+      <p><strong>Week 4 (23–29 Nov):</strong> Gift Voucher + Holiday Prep — 2 Instagram posts, 1 Facebook post, 2 Stories (holiday reminder + booking push).</p>
+      
+      <h3>New Formats Added</h3>
+      <ul>
+        <li>Instagram Reels (Portrait 1080 × 1920) — 4 animated variants with Ken Burns effect and floating badges</li>
+        <li>Square Posts (1080 × 1080) — 4 variants for Instagram feed</li>
+        <li>Facebook Landscape (1200 × 630) — 4 animated variants with Ken Burns slow zoom</li>
+        <li>Facebook Text Posts — 4 native text posts with comment/share actions</li>
+      </ul>
+      
+      <h3>Animation Details</h3>
+      <ul>
+        <li><strong>Reels:</strong> Ken Burns slow zoom (8s loop), floating category badge, pulsing CTA button</li>
+        <li><strong>Facebook Landscape:</strong> Ken Burns slow zoom (8s loop) on hover</li>
+        <li><strong>All formats:</strong> Hover lift + shadow, image scale 1.04</li>
+      </ul>
+      
+      <h3>Key Messages</h3>
+      <ul>
+        <li>It's a fine art, but you can wear it.</li>
+        <li>Every strand tells a story.</li>
+        <li>Considered artistry for days worth remembering.</li>
+        <li>Where artistic hairdressing meets high-end fashion.</li>
+      </ul>
+      
+      <h3>Contact Details (All Posts)</h3>
+      <p>Allure Hair Couture · Bespoke Hair Salon<br>
+      1 Village Lane, Shop 5, Hemel & Aarde Village, Hermanus<br>
+      WhatsApp: +27 69 507 5835 · Tel: 028 316 3845</p>
+      
+      <h3>Hashtags</h3>
+      <p>#AllureHairCouture #HermanusHair #LuxuryHair #BridalHair #ColourArtistry #HairCouture #WesternCape #SouthAfricanHair</p>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
