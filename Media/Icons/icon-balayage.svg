@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533" preserveAspectRatio="xMidYMid slice" fill="none">
+  <rect width="400" height="533" fill="#111111"/>
+  <!-- Hair strand flowing left to right -->
+  <path d="M60 180 C80 160 120 140 160 150 C200 160 220 200 240 220 C260 240 300 250 340 220" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M60 220 C90 200 130 180 170 190 C210 200 230 240 250 260 C270 280 310 290 350 260" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M60 260 C100 240 140 220 180 230 C220 240 240 280 260 300 C280 320 320 330 360 300" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M60 310 C110 290 150 270 190 280 C230 290 250 330 270 350 C290 370 330 380 370 350" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M60 360 C120 340 160 320 200 330 C240 340 260 380 280 400 C300 420 340 430 380 400" stroke="#c9a84c" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M60 410 C130 390 170 370 210 380 C250 390 270 430 290 450 C310 470 350 480 390 450" stroke="#c9a84c" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Central sun/flower motif -->
+  <circle cx="200" cy="200" r="60" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <circle cx="200" cy="200" r="40" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.5"/>
+  <circle cx="200" cy="200" r="20" stroke="#c9a84c" stroke-width="2.5" fill="none"/>
+  <!-- Rays -->
+  <line x1="200" y1="120" x2="200" y2="140" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="200" y1="260" x2="200" y2="280" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="120" y1="200" x2="140" y2="200" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="260" y1="200" x2="280" y2="200" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="143" y1="143" x2="157" y2="157" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="243" y1="243" x2="257" y2="257" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="143" y1="257" x2="157" y2="243" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="243" y1="157" x2="257" y2="143" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <!-- Label at bottom -->
+  <text x="200" y="490" text-anchor="middle" font-family="Zilla Slab, Rockwell, Georgia, serif" font-size="28" font-weight="700" letter-spacing="8" fill="white">BALAYAGE</text>
+</svg>

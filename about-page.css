@@ -1,0 +1,503 @@
+/* About page — extends the shared Allure service-page system */
+.about-hero {
+    min-height: min(900px, 100vh);
+    display: grid;
+    grid-template-columns: minmax(0, 46%) 1fr;
+    padding-top: 88px;
+    background: var(--void);
+    overflow: hidden
+}
+
+.about-hero-copy {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(5rem, 9vw, 9rem) clamp(2rem, 6vw, 7rem)
+}
+
+.about-hero-copy:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0 -190px 0 auto;
+    width: 250px;
+    background: linear-gradient(90deg, var(--void) 18%, rgba(9, 9, 9, .94) 48%, transparent)
+}
+
+.about-hero h1 {
+    font: 400 clamp(3.7rem, 7vw, 7.5rem)/.88 var(--serif);
+    letter-spacing: -.055em;
+    max-width: 8ch
+}
+
+.about-hero-lede {
+    font: 300 clamp(1.3rem, 2vw, 1.72rem)/1.55 var(--body);
+    color: #383532;
+    max-width: 29rem;
+    margin: 2rem 0 2.5rem
+}
+
+.about-hero-image {
+    position: relative;
+    min-height: 680px
+}
+
+.about-hero-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 58% center
+}
+
+.about-hero-image:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .34))
+}
+
+.story {
+    padding: clamp(6rem, 10vw, 10rem) clamp(1.5rem, 7vw, 8rem);
+    background: var(--paper);
+    color: #171717
+}
+
+.story-grid {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .72fr 1.28fr;
+    gap: clamp(3rem, 9vw, 10rem)
+}
+
+.story h2 {
+    font: 400 clamp(3rem, 5.7vw, 5.8rem)/.94 var(--serif);
+    letter-spacing: -.05em;
+    max-width: 8ch
+}
+
+.story-copy p {
+    font-size: clamp(1.24rem, 2vw, 1.56rem);
+    line-height: 1.65;
+    color: #24211e
+}
+
+.story-copy p+p {
+    margin-top: 1.35rem
+}
+
+.story-pull {
+    margin-top: 2.4rem;
+    padding-left: 1.4rem;
+    border-left: 2px solid var(--gold);
+    font: italic clamp(1.5rem, 2.5vw, 2rem)/1.35 var(--serif);
+    color: #715b1c
+}
+
+.story-facts {
+    margin-top: 4rem
+}
+
+.story-facts div {
+    padding: 1rem 0;
+    border-top: 1px solid #292725
+}
+
+.story-facts dt {
+    font: 700 .68rem var(--slab);
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    color: #806719
+}
+
+.story-facts dd {
+    font: 500 1.1rem var(--serif);
+    margin-top: .2rem
+}
+
+.values {
+    padding: clamp(5rem, 9vw, 9rem) clamp(1.5rem, 6vw, 7rem);
+    background: #0f0f0f
+}
+
+.values-head {
+    max-width: 1280px;
+    margin: 0 auto 4rem;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 3rem;
+    align-items: end
+}
+
+.values-head h2 {
+    font: 400 clamp(2.8rem, 5vw, 5.1rem)/.97 var(--serif);
+    letter-spacing: -.045em
+}
+
+.values-head p {
+    color: var(--muted);
+    max-width: 35rem
+}
+
+.value-grid {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line)
+}
+
+.value {
+    min-height: 330px;
+    padding: 2.4rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
+}
+
+.value-no {
+    display: block;
+    color: var(--gold);
+    font: 700 .7rem var(--slab);
+    letter-spacing: .2em;
+    margin-bottom: 4rem
+}
+
+.value h3 {
+    font: 500 1.7rem/1.15 var(--serif);
+    margin-bottom: 1rem
+}
+
+.value p {
+    color: var(--text-soft)
+}
+
+.team-gallery {
+    padding: clamp(6rem, 10vw, 10rem) clamp(1rem, 4vw, 4rem);
+    background: var(--paper);
+    color: var(--text)
+}
+
+.team-header {
+    max-width: 1320px;
+    margin: 0 auto 4rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 3rem
+}
+
+.team-header h2 {
+    font: 400 clamp(3rem, 6vw, 6rem)/.9 var(--serif);
+    letter-spacing: -.055em;
+    max-width: 8ch
+}
+
+.team-header-copy {
+    max-width: 34rem
+}
+
+.team-header-copy p {
+    font-size: 1.24rem;
+    color: #292622
+}
+
+.team-grid-about {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem
+}
+
+.team-portrait {
+    position: relative;
+    overflow: hidden;
+    background: #11100f;
+    min-height: 540px
+}
+
+.team-portrait:nth-child(1) {
+    grid-column: span 7
+}
+
+.team-portrait:nth-child(2) {
+    grid-column: span 5
+}
+
+.team-portrait:nth-child(n+3) {
+    grid-column: span 4
+}
+
+.team-portrait img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(.82);
+    transition: transform .8s var(--ease), filter .5s
+}
+
+.team-portrait:hover img {
+    transform: scale(1.025);
+    filter: saturate(1)
+}
+
+.portrait-caption {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 6rem 2rem 2rem;
+    background: linear-gradient(transparent, var(--paper-soft));
+    color: var(--text);
+    display: flex;
+    align-items: end;
+    justify-content: space-between
+}
+
+.portrait-caption strong {
+    font: 500 1.35rem var(--serif)
+}
+
+.portrait-caption span {
+    font: 700 .62rem var(--slab);
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--gold-light)
+}
+
+.founder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 760px;
+    background: var(--paper-soft)
+}
+
+.founder-image {
+    min-height: 620px
+}
+
+.founder-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%
+}
+
+.founder-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(4rem, 8vw, 8rem)
+}
+
+.founder-copy h2 {
+    font: 400 clamp(3rem, 5.4vw, 5.6rem)/.95 var(--serif);
+    letter-spacing: -.05em;
+    margin: 1.3rem 0 2rem
+}
+
+.founder-copy p {
+    color: var(--text-soft);
+    max-width: 35rem
+}
+
+.founder-copy p+p {
+    margin-top: 1.2rem
+}
+
+.founder-signature {
+    font: italic 1.55rem var(--serif);
+    color: var(--gold-light);
+    margin-top: 2rem
+}
+
+.place {
+    padding: clamp(6rem, 9vw, 9rem) clamp(1.5rem, 7vw, 8rem);
+    background: var(--paper);
+    color: var(--text)
+}
+
+.place-grid {
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: center
+}
+
+.place-image {
+    height: 650px;
+    overflow: hidden
+}
+
+.place-image img {
+    height: 100%;
+    object-fit: cover
+}
+
+.place-copy h2 {
+    font: 400 clamp(3rem, 5vw, 5rem)/.96 var(--serif);
+    letter-spacing: -.05em;
+    margin: 1.2rem 0 2rem
+}
+
+.place-copy p {
+    font-size: 1.22rem;
+    color: #292521
+}
+
+.place-details {
+    list-style: none;
+    margin: 2rem 0
+}
+
+.place-details li {
+    padding: 1rem 0;
+    border-top: 1px solid #292725;
+    display: grid;
+    grid-template-columns: 8rem 1fr
+}
+
+.place-details strong {
+    font: 700 .65rem var(--slab);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #806719
+}
+
+@media(max-width:1024px) {
+    .team-portrait {
+        min-height: 460px
+    }
+
+    .story-grid {
+        gap: 4rem
+    }
+
+    .value-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .value:last-child {
+        grid-column: 1/-1
+    }
+
+    .place-image {
+        height: 560px
+    }
+}
+
+@media(max-width:900px) {
+    .about-hero {
+        display: flex;
+        flex-direction: column;
+        padding-top: 76px;
+        min-height: 0
+    }
+
+    .about-hero-copy {
+        order: 2;
+        padding: 4rem 1.5rem 4.5rem
+    }
+
+    .about-hero-copy:after {
+        top: -110px;
+        right: 0;
+        left: 0;
+        width: auto;
+        height: 140px;
+        background: linear-gradient(0deg, var(--void) 25%, transparent)
+    }
+
+    .about-hero-image {
+        order: 1;
+        min-height: clamp(260px, 60vh, 440px);
+        height: clamp(260px, 60vh, 440px)
+    }
+
+    .about-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block
+    }
+
+    .about-hero h1 {
+        font-size: clamp(4rem, 18vw, 6rem)
+    }
+
+    .story-grid,
+    .values-head,
+    .founder,
+    .place-grid {
+        grid-template-columns: 1fr
+    }
+
+    .story h2 {
+        max-width: none
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr
+    }
+
+    .value {
+        min-height: 270px
+    }
+
+    .value-no {
+        margin-bottom: 2.2rem
+    }
+
+    .team-header {
+        display: block
+    }
+
+    .team-header-copy {
+        margin-top: 1.5rem
+    }
+
+    .team-grid-about {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 0 1.5rem 1.2rem;
+        scroll-padding-left: 1.5rem
+    }
+
+    .team-portrait,
+    .team-portrait:nth-child(n) {
+        flex: 0 0 86vw;
+        min-height: 520px;
+        scroll-snap-align: start
+    }
+
+    .portrait-caption {
+        padding: 6rem 1.5rem 1.6rem;
+        display: block
+    }
+
+    .portrait-caption span {
+        display: block;
+        margin-top: .35rem;
+        font-size: .68rem
+    }
+
+    .founder-image {
+        min-height: 72vh
+    }
+
+    .founder-copy {
+        padding: 4.5rem 1.5rem
+    }
+
+    .place-image {
+        min-height: 64vh
+    }
+
+    .place-details li {
+        grid-template-columns: 1fr;
+        gap: .35rem
+    }
+}

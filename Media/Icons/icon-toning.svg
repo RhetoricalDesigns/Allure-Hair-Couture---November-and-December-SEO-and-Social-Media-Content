@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" fill="none">
+  <rect width="400" height="400" fill="#111111"/>
+  <!-- Circular mirror/reflection motif -->
+  <circle cx="200" cy="200" r="100" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.4"/>
+  <circle cx="200" cy="200" r="80" stroke="#c9a84c" stroke-width="2.5" fill="none"/>
+  <circle cx="200" cy="200" r="60" stroke="#c9a84c" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="200" r="40" stroke="#c9a84c" stroke-width="3.5" fill="none"/>
+  <circle cx="200" cy="200" r="20" stroke="#c9a84c" stroke-width="4" fill="none"/>
+  <!-- Concentric reflection rays -->
+  <line x1="200" y1="100" x2="200" y2="130" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="270" x2="200" y2="300" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="100" y1="200" x2="130" y2="200" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="270" y1="200" x2="300" y2="200" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="129" y1="129" x2="150" y2="150" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="250" y1="250" x2="271" y2="271" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="129" y1="271" x2="150" y2="250" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <line x1="250" y1="150" x2="271" y2="129" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <!-- Droplet hint for toner -->
+  <path d="M200 160 C205 170 210 180 210 190 C210 200 205 205 200 205 C195 205 190 200 190 190 C190 180 195 170 200 160" fill="#c9a84c" opacity="0.7"/>
+  <!-- Label -->
+  <text x="200" y="380" text-anchor="middle" font-family="Zilla Slab, Rockwell, Georgia, serif" font-size="24" font-weight="700" letter-spacing="7" fill="white">TONING</text>
+</svg>

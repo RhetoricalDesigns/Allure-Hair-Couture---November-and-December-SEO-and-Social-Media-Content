@@ -1,0 +1,282 @@
+/*
+Three beige-led white color scheme variations for the Allure Couture website.
+They keep the existing font stack, markup structure, and layout geometry intact while
+replacing the current dark monochrome color system with cascading white sections and
+beige dark/accent system values.
+*/
+
+body.site-scheme-1 {
+    --page: #fffdf8;
+    --paper: #fffaf4;
+    --paper-soft: #f8f3ea;
+    --paper-deep: #e8d8bb;
+    --line: #b89763;
+    --line-soft: #d8c7a5;
+    --text: #171615;
+    --text-soft: #383532;
+    --muted: #514d48;
+    --accent: #b49462;
+    --accent-light: #d8b97c;
+    --accent-deep: #806c42;
+    --shadow: rgba(120, 93, 49, 0.16);
+    --hero-glass: rgba(255, 250, 244, 0.88);
+    background: var(--page);
+    color: var(--text);
+}
+
+body.site-scheme-2 {
+    --page: #fffefb;
+    --paper: #faf5e9;
+    --paper-soft: #ece4d3;
+    --paper-deep: #dfcaa8;
+    --line: #9f8260;
+    --line-soft: #d5b78c;
+    --text: #171615;
+    --text-soft: #383532;
+    --muted: #514d48;
+    --accent: #a98559;
+    --accent-light: #e0c291;
+    --accent-deep: #705835;
+    --shadow: rgba(110, 88, 53, 0.14);
+    --hero-glass: rgba(250, 245, 233, 0.88);
+    background: var(--page);
+    color: var(--text);
+}
+
+body.site-scheme-3 {
+    --page: #fffefc;
+    --paper: #f8efe4;
+    --paper-soft: #eadcc7;
+    --paper-deep: #c6a47c;
+    --line: #b08a62;
+    --line-soft: #e9cfb1;
+    --text: #171615;
+    --text-soft: #383532;
+    --muted: #514d48;
+    --accent: #b88659;
+    --accent-light: #dfbd89;
+    --accent-deep: #82684d;
+    --shadow: rgba(130, 96, 48, 0.14);
+    --hero-glass: rgba(248, 239, 228, 0.92);
+    background: var(--page);
+    color: var(--text);
+}
+
+body.site-scheme-1 .service-hero,
+body.site-scheme-1 .intro,
+body.site-scheme-1 .gallery,
+body.site-scheme-1 .story,
+body.site-scheme-1 .team-gallery,
+body.site-scheme-1 .booking-main,
+body.site-scheme-1 .first-visit-dialog,
+body.site-scheme-1 .offerings,
+body.site-scheme-1 .faq,
+body.site-scheme-1 .values,
+body.site-scheme-1 .experience,
+body.site-scheme-1 .service-section,
+body.site-scheme-1 main {
+    background: var(--paper);
+    color: var(--text);
+}
+
+body.site-scheme-2 .service-hero,
+body.site-scheme-2 .intro,
+body.site-scheme-2 .gallery,
+body.site-scheme-2 .story,
+body.site-scheme-2 .team-gallery,
+body.site-scheme-2 .booking-main,
+body.site-scheme-2 .first-visit-dialog,
+body.site-scheme-2 .offerings,
+body.site-scheme-2 .faq,
+body.site-scheme-2 .values,
+body.site-scheme-2 .experience,
+body.site-scheme-2 .service-section,
+body.site-scheme-2 main {
+    background: var(--paper);
+    color: var(--text);
+}
+
+body.site-scheme-3 .service-hero,
+body.site-scheme-3 .intro,
+body.site-scheme-3 .gallery,
+body.site-scheme-3 .story,
+body.site-scheme-3 .team-gallery,
+body.site-scheme-3 .booking-main,
+body.site-scheme-3 .first-visit-dialog,
+body.site-scheme-3 .offerings,
+body.site-scheme-3 .faq,
+body.site-scheme-3 .values,
+body.site-scheme-3 .experience,
+body.site-scheme-3 .service-section,
+body.site-scheme-3 main {
+    background: var(--paper);
+    color: var(--text);
+}
+
+body.site-scheme-1 .service-hero .hero-copy,
+body.site-scheme-1 .about-hero-copy,
+body.site-scheme-1 .booking-hero,
+body.site-scheme-1 .hero-copy,
+body.site-scheme-1 .hero-image,
+body.site-scheme-1 .experience-image {
+    background: var(--paper-soft);
+    color: var(--text);
+}
+
+body.site-scheme-2 .service-hero .hero-copy,
+body.site-scheme-2 .about-hero-copy,
+body.site-scheme-2 .booking-hero,
+body.site-scheme-2 .hero-copy,
+body.site-scheme-2 .hero-image,
+body.site-scheme-2 .experience-image {
+    background: var(--paper-soft);
+    color: var(--text);
+}
+
+body.site-scheme-3 .service-hero .hero-copy,
+body.site-scheme-3 .about-hero-copy,
+body.site-scheme-3 .booking-hero,
+body.site-scheme-3 .hero-copy,
+body.site-scheme-3 .hero-image,
+body.site-scheme-3 .experience-image {
+    background: var(--paper-soft);
+    color: var(--text);
+}
+
+body.site-scheme-1 .button,
+body.site-scheme-1 .nav-cta,
+body.site-scheme-1 .book-link,
+body.site-scheme-1 .first-visit-actions a,
+body.site-scheme-1 .first-visit-dismiss {
+    border-color: var(--accent);
+    color: var(--accent-deep);
+    background: var(--paper);
+}
+
+body.site-scheme-2 .button,
+body.site-scheme-2 .nav-cta,
+body.site-scheme-2 .book-link,
+body.site-scheme-2 .first-visit-actions a,
+body.site-scheme-2 .first-visit-dismiss {
+    border-color: var(--accent);
+    color: var(--accent-deep);
+    background: var(--paper);
+}
+
+body.site-scheme-3 .button,
+body.site-scheme-3 .nav-cta,
+body.site-scheme-3 .book-link,
+body.site-scheme-3 .first-visit-actions a,
+body.site-scheme-3 .first-visit-dismiss {
+    border-color: var(--accent);
+    color: var(--accent-deep);
+    background: var(--paper);
+}
+
+body.site-scheme-1 .button.gold,
+body.site-scheme-1 .button:hover,
+body.site-scheme-1 .button:focus-visible,
+body.site-scheme-1 .nav-cta:hover,
+body.site-scheme-1 .book-link:hover,
+body.site-scheme-1 .first-visit-actions a:hover {
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: var(--text);
+}
+
+body.site-scheme-2 .button.gold,
+body.site-scheme-2 .button:hover,
+body.site-scheme-2 .button:focus-visible,
+body.site-scheme-2 .nav-cta:hover,
+body.site-scheme-2 .book-link:hover,
+body.site-scheme-2 .first-visit-actions a:hover {
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: var(--text);
+}
+
+body.site-scheme-3 .button.gold,
+body.site-scheme-3 .button:hover,
+body.site-scheme-3 .button:focus-visible,
+body.site-scheme-3 .nav-cta:hover,
+body.site-scheme-3 .book-link:hover,
+body.site-scheme-3 .first-visit-actions a:hover {
+    background: var(--accent-light);
+    border-color: var(--accent-light);
+    color: var(--text);
+}
+
+body.site-scheme-1 a,
+body.site-scheme-1 p,
+body.site-scheme-1 li,
+body.site-scheme-1 span,
+body.site-scheme-1 h1,
+body.site-scheme-1 h2,
+body.site-scheme-1 h3,
+body.site-scheme-1 h4,
+body.site-scheme-1 h5,
+body.site-scheme-1 h6 {
+    color: var(--text);
+}
+
+body.site-scheme-2 a,
+body.site-scheme-2 p,
+body.site-scheme-2 li,
+body.site-scheme-2 span,
+body.site-scheme-2 h1,
+body.site-scheme-2 h2,
+body.site-scheme-2 h3,
+body.site-scheme-2 h4,
+body.site-scheme-2 h5,
+body.site-scheme-2 h6 {
+    color: var(--text);
+}
+
+body.site-scheme-3 a,
+body.site-scheme-3 p,
+body.site-scheme-3 li,
+body.site-scheme-3 span,
+body.site-scheme-3 h1,
+body.site-scheme-3 h2,
+body.site-scheme-3 h3,
+body.site-scheme-3 h4,
+body.site-scheme-3 h5,
+body.site-scheme-3 h6 {
+    color: var(--text);
+}
+
+body[class*='site-scheme-'] .service-card,
+body[class*='site-scheme-'] .product-card,
+body[class*='site-scheme-'] .booking-select,
+body[class*='site-scheme-'] .calendar-nav,
+body[class*='site-scheme-'] .timeslot,
+body[class*='site-scheme-'] .booking-selected,
+body[class*='site-scheme-'] .gift-voucher-section,
+body[class*='site-scheme-'] .gift-voucher-card,
+body[class*='site-scheme-'] .events-section,
+body[class*='site-scheme-'] .events-copy,
+body[class*='site-scheme-'] .about-section,
+body[class*='site-scheme-'] .nav:not(.site-nav) {
+    color: #fff;
+}
+
+body[class*='site-scheme-'] .service-card :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .product-card :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .booking-select,
+body[class*='site-scheme-'] .calendar-nav,
+body[class*='site-scheme-'] .timeslot,
+body[class*='site-scheme-'] .booking-selected :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .gift-voucher-section :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .gift-voucher-card :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .events-section :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .about-section :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button),
+body[class*='site-scheme-'] .nav:not(.site-nav) :is(a, p, li, span, h1, h2, h3, h4, h5, h6, button) {
+    color: #fff;
+}
+
+/* Force all text inside the hero section to be white */
+.hero .hero-title,
+.hero .hero-subtitle,
+.hero .hero-tagline {
+    color: #ffffff !important;
+}

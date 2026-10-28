@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" fill="none">
+  <rect width="400" height="400" fill="#111111"/>
+  <!-- Large circular colour wheel -->
+  <circle cx="200" cy="200" r="100" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <circle cx="200" cy="200" r="80" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="200" cy="200" r="60" stroke="#c9a84c" stroke-width="2.5" fill="none"/>
+  <circle cx="200" cy="200" r="40" stroke="#c9a84c" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="200" r="20" stroke="#c9a84c" stroke-width="3.5" fill="none"/>
+  <!-- Diagonal colour streams -->
+  <path d="M80 320 C120 280 160 120 200 80 C240 120 280 280 320 320" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M60 280 C100 240 140 80 200 40 C260 80 300 240 340 280" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M100 340 C140 300 180 160 200 120 C220 160 260 300 300 340" stroke="#c9a84c" stroke-width="3.5" fill="none" opacity="0.8"/>
+  <!-- Dropper/syringe hint -->
+  <ellipse cx="200" cy="200" rx="8" ry="8" fill="#c9a84c" opacity="0.6"/>
+  <!-- Label -->
+  <text x="200" y="380" text-anchor="middle" font-family="Zilla Slab, Rockwell, Georgia, serif" font-size="24" font-weight="700" letter-spacing="7" fill="white">COLOUR MELT</text>
+</svg>

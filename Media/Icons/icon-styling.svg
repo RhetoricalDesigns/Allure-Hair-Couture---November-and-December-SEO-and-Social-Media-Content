@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" fill="none">
+  <rect width="400" height="400" fill="#111111"/>
+  <!-- Hair dryer/brush circular motif -->
+  <circle cx="200" cy="200" r="90" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.5"/>
+  <circle cx="200" cy="200" r="70" stroke="#c9a84c" stroke-width="2.5" fill="none"/>
+  <circle cx="200" cy="200" r="50" stroke="#c9a84c" stroke-width="3" fill="none"/>
+  <!-- Curved brush strokes radiating -->
+  <path d="M200 80 C220 100 240 140 240 180" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M200 320 C220 300 240 260 240 220" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M80 200 C100 220 140 240 180 240" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M320 200 C300 220 260 240 220 240" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.6"/>
+  <!-- Diagonal strokes -->
+  <path d="M120 120 C140 140 170 170 190 190" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M280 280 C260 260 230 230 210 210" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M120 280 C140 260 170 230 190 210" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M280 120 C260 140 230 170 210 190" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <!-- Central swirl -->
+  <path d="M200 180 C210 180 215 185 215 195 C215 205 210 210 200 210 C190 210 185 205 185 195 C185 185 190 180 200 180" stroke="#c9a84c" stroke-width="2" fill="none"/>
+  <circle cx="200" cy="195" r="5" fill="#c9a84c" opacity="0.8"/>
+  <!-- Label -->
+  <text x="200" y="380" text-anchor="middle" font-family="Zilla Slab, Rockwell, Georgia, serif" font-size="24" font-weight="700" letter-spacing="7" fill="white">STYLING</text>
+</svg>
